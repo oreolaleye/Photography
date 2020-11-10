@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  	 <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <!-- Bootstrap jquery & javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	    <!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+		<!-- Animate on scroll -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/979b69150e.js" crossorigin="anonymous"></script>
+
+      <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Oswald&display=swap" rel="stylesheet">
+
+  	  <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+	<title>Gallery | Photography</title>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://img.icons8.com/material-rounded/30/000000/chevron-up.png"/></button>
+	<div class="wrapper">
+		<nav class="navbar  navbar-expand-lg navbar-light bg-light  pr-100 pl-100">
+			<a href="#"><img class="logo-2" src="img/logo/logo.png" alt="Logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link menu-item-1" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link menu-item-1" href="about.html">About</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link menu-item-2" href="gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link menu-item-2" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="mt-70">
+			<div>
+				<div class="row row-2">
+					<div class="col-lg-4 col-md-12">
+						<div class="gal-text-div animate__animated animate__fadeInBottomLeft">
+							<h2 class="gal-head-text">Gallery</h2>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-12 animate__animated animate__fadeInTopRight ">
+						<div class="gal-head-img about-img">
+							
+						</div>
+					</div>
+				</div>
+
+				<!-- Counter -->
+		<section class="counter-section">
+			<div class="row row-2">
+				<div class="col-lg-3 col-md-6 text-center counter-box">
+					<div>
+						<img src="https://img.icons8.com/dotty/65/ffffff/experience-skill.png"/>
+					</div>
+					<div class="counter ft-40" data-target="10">0</div>
+					<p class="ft-30">Years of Experience</p>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center counter-box">
+					<div>
+						<img src="https://img.icons8.com/pastel-glyph/65/ffffff/briefcase.png"/>
+					</div>
+					<div class="counter ft-40" data-target="5000">0</div>
+					<p class="ft-30">Projects Completed</p>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center counter-box">
+					<div>
+						<img src="img/handshake.svg"/>
+					</div>
+					<div class="counter ft-40" data-target="300">0</div>
+					<p class="ft-30">Satisfied Clients</p>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center counter-box">
+					<div>
+						<img src="https://img.icons8.com/carbon-copy/72/ffffff/medal.png"/>
+					</div>
+					<div class="counter ft-40" data-target="12">0</div>
+					<p class="ft-30">Awards</p>
+				</div>
+			</div>
+		</section>
+
+				<div class="link-div">
+					<div class="row row-2">
+						<div class="col-lg-3 col-md-6">
+							<div class="gal-1 about-img h-300 gal-m">
+								<a class="gal-links" href="#weds" onclick="unhide()" id="gal-link-1"><h4>Weddings</h4></a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 gal-m">
+							<div class="gal-2 about-img h-300">
+								<a class="gal-links" href="#births" onclick="unhide2()" id="gal-link-2"><h4>Birthdays</h4></a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 gal-m">
+							<div class="gal-3 about-img h-300">
+								<a class="gal-links" href="#life" onclick="unhide3()" id="gal-link-3"><h4>Life-Style</h4></a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 gal-m">
+							<div class="gal-4 about-img h-300">
+								<a class="gal-links" href="#port" onclick="unhide4()" id="gal-link-4"><h4>Portraits</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+			<!-- Weddings -->
+		<section class="hide" id="weds">
+			<a class="lightbox-close" href="#weds" onclick="hide()"></a>
+			<div class="pr-100 pl-100">
+				<div class="row row-2">
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="wed-1 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#wed=1"><p>Name & Name<br>Year</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="wed-2 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#wed=2"><p>Name & Name<br>Year</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="wed-3 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#wed=3"><p>Name & Name<br>Year</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="wed-4 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#wed=4"><p>Name & Name<br>Year</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-2">
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="wed-5 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#wed=5"><p>Name & Name<br>Year</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="wed-6 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#wed=6"><p>Name & Name<br>Year</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="wed-7 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#wed=7"><p>Name & Name<br>Year</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="wed-8 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#wed=8"><p>Name & Name<br>Year</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal classes -->
+			<div class="wed-modals">
+				<div class="lightbox-target" id="wed=1">
+					<img src="img/18.jpg"/>
+					<a class="lightbox-close" href="#weds"></a>
+				</div>
+				<div class="lightbox-target" id="wed=2">
+					<img src="img/17.jpg"/>
+					<a class="lightbox-close" href="#weds"></a>
+				</div>
+				<div class="lightbox-target" id="wed=3">
+					<img src="img/16.jpg"/>
+					<a class="lightbox-close" href="#weds"></a>
+				</div>
+				<div class="lightbox-target" id="wed=4">
+					<img src="img/19.jpg"/>
+					<a class="lightbox-close" href="#weds"></a>
+				</div>
+				<div class="lightbox-target" id="wed=5">
+					<img src="img/15.jpg"/>
+					<a class="lightbox-close" href="#weds"></a>
+				</div>
+				<div class="lightbox-target" id="wed=6">
+					<img src="img/11.jpg"/>
+					<a class="lightbox-close" href="#weds"></a>
+				</div>
+				<div class="lightbox-target" id="wed=7">
+					<img src="img/13.jpg"/>
+					<a class="lightbox-close" href="#weds"></a>
+				</div>
+				<div class="lightbox-target" id="wed=8">
+					<img src="img/7.jpg"/>
+					<a class="lightbox-close" href="#weds"></a>
+				</div>
+			</div>
+		</section>
+
+			<!-- Birthdays -->
+		<section class="hide" id="births">
+			<a class="lightbox-close" href="#births" onclick="hide2()"></a>
+			<div class="pr-100 pl-100">
+				<div class="row row-2">
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="birth-1 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#birth=1"><p>Name @ Age</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="birth-2 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#birth=2"><p>Name @ Age</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="birth-3 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#birth=3"><p>Name @ Age</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="birth-4 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#birth=4"><p>Name @ Age</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-2">
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="birth-5 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#birth=5"><p>Name @ Age</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="birth-6 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#birth=6"><p>Name @ Age</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="birth-7 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#birth=7"><p>Name @ Age</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="birth-8 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#birth=8"><p>Name @ Age</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal classes -->
+			<div class="birth-modals">
+				<div class="lightbox-target" id="birth=1">
+					<img src="img/34.jpg"/>
+					<a class="lightbox-close" href="#births"></a>
+				</div>
+				<div class="lightbox-target" id="birth=2">
+					<img src="img/35.jpg"/>
+					<a class="lightbox-close" href="#births"></a>
+				</div>
+				<div class="lightbox-target" id="birth=3">
+					<img src="img/22.jpg"/>
+					<a class="lightbox-close" href="#births"></a>
+				</div>
+				<div class="lightbox-target" id="birth=4">
+					<img src="img/38.jpg"/>
+					<a class="lightbox-close" href="#births"></a>
+				</div>
+				<div class="lightbox-target" id="birth=5">
+					<img src="img/21.jpg"/>
+					<a class="lightbox-close" href="#births"></a>
+				</div>
+				<div class="lightbox-target" id="birth=6">
+					<img src="img/39.jpg"/>
+					<a class="lightbox-close" href="#births"></a>
+				</div>
+				<div class="lightbox-target" id="birth=7">
+					<img src="img/37.jpg"/>
+					<a class="lightbox-close" href="#births"></a>
+				</div>
+				<div class="lightbox-target" id="birth=8">
+					<img src="img/36.jpg"/>
+					<a class="lightbox-close" href="#births"></a>
+				</div>
+			</div>
+		</section>
+
+			<!-- Life-Style -->
+		<section class="hide" id="life">
+			<a class="lightbox-close" href="#life" onclick="hide3()"></a>
+			<div class="pr-100 pl-100">
+				<div class="row row-2">
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="life-1 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#life=1"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="life-2 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#life=2"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="life-3 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#life=3"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="life-4 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#life=4"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-2">
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="life-5 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#life=5"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="life-6 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#life=6"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="life-7 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#life=7"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="life-8 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#life=8"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal classes -->
+			<div class="life-modals">
+				<div class="lightbox-target" id="life=1">
+					<img src="img/41.jpg"/>
+					<a class="lightbox-close" href="#life"></a>
+				</div>
+				<div class="lightbox-target" id="life=2">
+					<img src="img/43.jpg"/>
+					<a class="lightbox-close" href="#life"></a>
+				</div>
+				<div class="lightbox-target" id="life=3">
+					<img src="img/23.jpg"/>
+					<a class="lightbox-close" href="#life"></a>
+				</div>
+				<div class="lightbox-target" id="life=4">
+					<img src="img/40.jpg"/>
+					<a class="lightbox-close" href="#life"></a>
+				</div>
+				<div class="lightbox-target" id="life=5">
+					<img src="img/24.jpg"/>
+					<a class="lightbox-close" href="#life"></a>
+				</div>
+				<div class="lightbox-target" id="life=6">
+					<img src="img/42.jpg"/>
+					<a class="lightbox-close" href="#life"></a>
+				</div>
+				<div class="lightbox-target" id="life=7">
+					<img src="img/46.jpg"/>
+					<a class="lightbox-close" href="#life"></a>
+				</div>
+				<div class="lightbox-target" id="life=8">
+					<img src="img/45.jpg"/>
+					<a class="lightbox-close" href="#life"></a>
+				</div>
+			</div>
+		</section>
+
+			<!-- Portraits -->
+		<section class="hide" id="port">
+			<a class="lightbox-close" href="#port" onclick="hide4()"></a>
+			<div class="pr-100 pl-100">
+				<div class="row row-2">
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="port-1 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#port=1"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="port-2 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#port=2"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="port-3 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#port=3"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="port-4 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#port=4"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-2">
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="port-5 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#port=5"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="port-6 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#port=6"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="port-7 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#port=7"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 gal-m">
+						<div class="port-8 about-img h-300">
+							<div class="ca name">
+								<a class="lightbox" href="#port=8"><p>View</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal classes -->
+			<div class="port-modals">
+				<div class="lightbox-target" id="port=1">
+					<img src="img/31.jpg"/>
+					<a class="lightbox-close" href="#port"></a>
+				</div>
+				<div class="lightbox-target" id="port=2">
+					<img src="img/25.jpg"/>
+					<a class="lightbox-close" href="#port"></a>
+				</div>
+				<div class="lightbox-target" id="port=3">
+					<img src="img/33.jpg"/>
+					<a class="lightbox-close" href="#port"></a>
+				</div>
+				<div class="lightbox-target" id="port=4">
+					<img src="img/48.jpg"/>
+					<a class="lightbox-close" href="#port"></a>
+				</div>
+				<div class="lightbox-target" id="port=5">
+					<img src="img/32.jpg"/>
+					<a class="lightbox-close" href="#port"></a>
+				</div>
+				<div class="lightbox-target" id="port=6">
+					<img src="img/47.png"/>
+					<a class="lightbox-close" href="#port"></a>
+				</div>
+				<div class="lightbox-target" id="port=7">
+					<img src="img/28.jpg"/>
+					<a class="lightbox-close" href="#port"></a>
+				</div>
+				<div class="lightbox-target" id="port=8">
+					<img src="img/49.jpg"/>
+					<a class="lightbox-close" href="#port"></a>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div>
+				<div class="row row-2">
+					<div class="col-md-4 ca">
+						<a href="#"><img class="logo-2" src="img/logo/logo-2.png" alt="Logo"></a>
+					</div>
+					<div class="col-md-4 ca pt-30">
+						<p>Integer eget aliquet nibh praesent tristique magna sit amet.</p>
+					</div>
+					<div class="col-md-4 ca pt-30">
+						<a href="#" class="facebook mr-10"><i class="fa fa-facebook"></i></a> 
+						<a href="#" class="twitter mr-10"><i class="fa fa-twitter"></i></a> 
+						<a href="#" class="instagram mr-10"><i class="fab fa-instagram"></i></a> 
+						<a href="#" class="linkedin mr-10"><i class="fa fa-linkedin"></i></a>
+						<a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+					</div>
+				</div>
+				<div class="ca">
+					<p>Designed by <span><a href="https://oreolaleye.com.ng">Ore Olaleye</a></span></p>
+				</div>
+				
+			</div>
+		</footer>
+	</div>
+<script src="index.js"></script>
+</body>
+</html>
